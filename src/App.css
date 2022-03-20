@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.icon-rotate {
+  transition: all 0.3s ease;
+}
+
+.icon-rotate:hover {
+  transform: rotate(80deg);
+  -ms-transform: rotate(80deg); /*  for IE  */
+  /* 	for browsers supporting webkit (such as chrome, firefox, safari etc.). */
+  -webkit-transform: rotate(80deg);
+}
+.icon-rotate-infinite {
+}
+
+.icon-rotate-infinite > svg {
+  animation: spin 1s infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner-wrapper {
+  height: 400px;
+}
+
+html {
+  max-height: 500px;
+  max-width: 350px;
+  min-height: 500px;
+  min-width: 350px;
+}
